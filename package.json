@@ -1,0 +1,40 @@
+{
+  "name": "rcsb-saguaro-charts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/ChartPlot.js",
+  "files": [
+    "build/ChartPlot.js",
+    "build/*ts",
+    "build/**/*ts",
+    "build/**/**/*ts",
+    "build/**/**/**/*ts",
+    "build/rcsb-saguaro-chart.js"
+  ],
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@types/d3": "^6.7.3",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "babel-loader": "^8.2.2",
+    "d3": "^7.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rxjs": "^7.1.0",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.4",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "victory": "^35.9.0"
+  }
+}
