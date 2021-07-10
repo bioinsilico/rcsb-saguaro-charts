@@ -13,10 +13,10 @@ export class PieChartView extends React.Component <ChartViewInterface,ChartViewI
     }
 
     private dataByCategory(): pieData{
-        const categories: string[] = Array.from(new Set(this.state.data.map(d=>d.value as string)));
+        const categories: string[] = Array.from(new Set(this.state.data.map(d=>d.label as string)));
         const values: {x:string, y:number}[] = categories.map(c=>({
             x:c,
-            y:this.state.data.filter(d=> d.value === c).length
+            y:this.state.data.filter(d=> d.label === c).length
         }));
         return {categories, values};
     }

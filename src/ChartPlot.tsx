@@ -3,7 +3,7 @@ import * as ReactDom from "react-dom";
 
 import {ChartObjectInterface} from "./ChartView/ChartViewInterface";
 import {PieChartView} from "./ChartView/PieChartView";
-import {HistogramChartView} from "./ChartView/HistogramChart";
+import {HistogramChartView} from "./ChartView/HistogramChartView";
 import {BarChartView} from "./ChartView/BarChartView";
 
 export enum ChartType {

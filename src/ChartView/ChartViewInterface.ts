@@ -1,9 +1,21 @@
 
 export interface ChartObjectInterface {
-    objectId: string
-    value: string|number;
+    label: string|number;
+    population: number;
+}
+
+export interface ChartConfigInterface {
+    mergeGroupSize?: number;
+    mergeDomainMaxValue?:number;
+    mostPopulatedGroups?: number;
+    mergeName?: string;
+    tickIncrement?: {
+        origin: number;
+        increment: number
+    };
 }
 
 export interface ChartViewInterface {
     data: ChartObjectInterface[];
+    config?:ChartConfigInterface;
 }
